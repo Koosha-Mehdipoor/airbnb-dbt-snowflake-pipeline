@@ -1,4 +1,5 @@
 -- Set up the defaults
+-- this is a comment for test github setups
 CREATE WAREHOUSE IF NOT EXISTS COMPUTE_WH;
 USE WAREHOUSE COMPUTE_WH;
 
