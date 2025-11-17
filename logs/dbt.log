@@ -303,3 +303,161 @@ Runtime Error
 [0m15:31:32.023135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c3b9be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c642300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bec1070>]}
 [0m15:31:32.023317 [debug] [MainThread]: Flushing usage events
 [0m15:31:32.785921 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2025-11-14 15:45:28.488375 | 019a830b-03a6-7c80-bfe6-861faa3e1e1a ====================
+==================== 2025-11-17 13:43:32.322217 | 019a920e-74d8-7541-87fb-501a6e2f725d ====================
+dbt-fusion 2.0.0-preview.65
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.65
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "jyvgupe-qa12706",
+  "user": "dbt",
+  "database": "AIRBNB",
+  "warehouse": "COMPUTE_WH",
+  "schema": "DEV",
+  "role": "TRANSFORM"
+13:43:43.694652 [debug]: Query executed on node unknown:
+select 1 as id
+ Debugging connection test: OK
+  Debugged All checks passed!
+New version available 2.0.0-preview.67 (run `dbt system update`)
+13:43:44.315408 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [12.0s]
+==================== 2025-11-17 14:01:35.154265 | 019a921e-faa8-7061-8b0a-cafa7ec5acd0 ====================
+dbt-fusion 2.0.0-preview.65
+   Loading ~/.dbt/profiles.yml
+New version available 2.0.0-preview.67 (run `dbt system update`)
+14:01:36.148880 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [994ms]
+==================== 2025-11-17 14:04:11.889798 | 019a9221-5ee7-7b43-8fba-85ce67f90d5a ====================
+dbt-fusion 2.0.0-preview.65
+   Loading ~/.dbt/profiles.yml
+14:04:11.911978 [error]: dbt1005: Target 'DEV' not found in profiles.yml
+14:04:12.364052 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error [474ms]
+==================== 2025-11-17 14:04:51.516492 | 019a9221-f9bb-7ba0-9b47-0f4c2d512dd6 ====================
+dbt-fusion 2.0.0-preview.65
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.65
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "jyvgupe-qa12706",
+  "user": "dbt",
+  "database": "AIRBNB",
+  "warehouse": "COMPUTE_WH",
+  "schema": "DEV",
+  "role": "TRANSFORM"
+14:04:53.106315 [debug]: Query executed on node unknown:
+select 1 as id
+ Debugging connection test: OK
+  Debugged All checks passed!
+New version available 2.0.0-preview.67 (run `dbt system update`)
+14:04:53.751898 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [2.2s]
+==================== 2025-11-17 14:05:01.699159 | 019a9222-2181-7a03-8c5f-b98acb405126 ====================
+dbt-fusion 2.0.0-preview.65
+   Loading ~/.dbt/profiles.yml
+New version available 2.0.0-preview.67 (run `dbt system update`)
+14:05:02.514431 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [815ms]
+==================== 2025-11-17 14:05:19.261083 | 019a9222-661b-7d20-8923-f3c1c3c7ff76 ====================
+dbt-fusion 2.0.0-preview.65
+   Loading ~/.dbt/profiles.yml
+New version available 2.0.0-preview.67 (run `dbt system update`)
+14:05:19.995022 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [733ms]
+==================== 2025-11-17 14:06:22.165912 | 019a9223-5bd3-71f2-ab05-f7dee4c0ba99 ====================
+14:07:21.098764 [info ]: 
+==================== Execution Summary =====================
+Finished 'system' successfully [58.9s]
+==================== 2025-11-17 14:07:44.267425 | 019a9224-9c88-7ac0-be90-660eb91a24d6 ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.67
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "jyvgupe-qa12706",
+  "user": "dbt",
+  "database": "AIRBNB",
+  "warehouse": "COMPUTE_WH",
+  "schema": "DEV",
+  "role": "TRANSFORM"
+14:07:45.959463 [debug]: Query executed on node unknown:
+select 1 as id
+ Debugging connection test: OK
+  Debugged All checks passed!
+14:07:46.622454 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [2.4s]
+==================== 2025-11-17 14:07:53.213415 | 019a9224-bf7c-7463-9053-8fac6bc5f20b ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+14:07:54.140110 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [926ms]
+==================== 2025-11-17 14:08:07.954869 | 019a9224-f911-7c30-a8a0-2a55ceb8a1d3 ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+14:08:08.839443 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [884ms]
+==================== 2025-11-17 14:11:14.363777 | 019a9227-d135-79f2-8b62-0517f431fd85 ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+14:11:15.498848 [info ]: 
+==================== Execution Summary =====================
+Finished 'list' successfully for target 'dev' [1.1s]
+==================== 2025-11-17 14:11:30.465368 | 019a9228-1020-7b90-b6eb-db83d6b6d88b ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+14:11:31.157047 [info ]: 
+==================== Execution Summary =====================
+Finished 'list' successfully for target 'dev' [691ms]
+==================== 2025-11-17 14:12:17.451658 | 019a9228-c7aa-73f1-a1a3-23b6db9226f7 ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+14:12:18.225097 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [773ms]
+==================== 2025-11-17 14:12:30.632907 | 019a9228-fb27-7e91-98e0-b2cb9624b6b4 ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+14:12:31.321372 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [688ms]
+==================== 2025-11-17 14:13:01.894824 | 019a9229-7545-7011-9857-4f38549bf6d0 ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+14:13:02.514088 [info ]: 
+==================== Execution Summary =====================
+Finished 'list' successfully for target 'dev' [619ms]
+==================== 2025-11-17 14:14:42.550522 | 019a922a-fe6d-7501-b6d0-806acaadbc5d ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+14:14:43.425411 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [874ms]
+==================== 2025-11-17 14:18:34.212340 | 019a922e-8763-7320-b740-be1fda7f2eec ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+14:18:35.553188 [info ]: 
+==================== Execution Summary =====================
+Finished 'list' successfully for target 'dev' [1.3s]

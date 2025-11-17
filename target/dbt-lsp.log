@@ -1,0 +1,54 @@
+==================== 2025-11-14 15:43:30.779058 | e3b4cfad-3dcc-4ac1-8254-57512d48bcfb ====================
+15:43:30.779318 [info ]: Starting dbt LSP server
+15:43:30.779361 [info ]: Connecting to LSP client on port 8000
+15:43:30.779636 [info ]: Successfully connected to LSP client
+15:43:30.779644 [info ]: Creating LSP service...
+15:43:30.821984 [info ]: Creating LSP server...
+15:43:30.821991 [info ]: Starting LSP server...
+15:43:30.953859 [info ]: Cached model count updated: 0 models (estimate)
+15:43:30.974167 [info ]: Cached model count updated: 0 models (accurate)
+15:43:31.074470 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2025-11-17 08:25:44.785792 | a1960eb5-f8e2-487f-815a-277f8c35a6af ====================
+08:25:44.786608 [info ]: Starting dbt LSP server
+08:25:44.786643 [info ]: Connecting to LSP client on port 8000
+08:25:44.787091 [info ]: Successfully connected to LSP client
+08:25:44.787097 [info ]: Creating LSP service...
+08:25:44.829259 [info ]: Creating LSP server...
+08:25:44.829272 [info ]: Starting LSP server...
+08:25:45.032855 [info ]: Cached model count updated: 0 models (estimate)
+08:25:45.067318 [info ]: Cached model count updated: 0 models (accurate)
+08:25:45.190139 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2025-11-17 13:47:36.207983 | 028c8d6f-d364-47ed-825a-594c6bf58568 ====================
+13:47:36.208010 [info ]: Starting dbt LSP server
+13:47:36.208019 [info ]: Connecting to LSP client on port 8000
+13:47:36.208205 [info ]: Successfully connected to LSP client
+13:47:36.208210 [info ]: Creating LSP service...
+13:47:36.240104 [info ]: Creating LSP server...
+13:47:36.240118 [info ]: Starting LSP server...
+13:47:36.691349 [info ]: Cached model count updated: 0 models (estimate)
+13:47:36.708521 [info ]: Cached model count updated: 0 models (accurate)
+13:47:36.795096 [info ]: Cached model count updated: 0 models (accurate)
+14:13:35.032783 [info ]: Cached model count updated: 0 models (estimate)
+14:13:35.163653 [info ]: Cached model count updated: 0 models (estimate)
+14:13:35.177323 [error]: dbt1060: Ignored unexpected key 'airbnb'. Try '+airbnb' instead. YAML path: 'airbnb'.
+  --> dbt_project.yml:32:10
+14:13:35.181173 [info ]: Cached model count updated: 0 models (accurate)
+14:13:35.257858 [info ]: Cached model count updated: 0 models (accurate)
+14:13:35.502105 [info ]: Cached model count updated: 0 models (estimate)
+14:13:35.502640 [info ]: Cached model count updated: 0 models (accurate)
+14:14:32.279859 [info ]: Cached model count updated: 0 models (estimate)
+14:14:32.410950 [info ]: Cached model count updated: 0 models (estimate)
+14:14:32.427172 [info ]: Cached model count updated: 0 models (accurate)
+14:14:32.502171 [info ]: Cached model count updated: 0 models (accurate)
+14:14:32.738975 [info ]: Cached model count updated: 0 models (estimate)
+14:14:32.739226 [info ]: Cached model count updated: 0 models (accurate)
+14:14:34.701558 [info ]: Cached model count updated: 0 models (estimate)
+14:14:34.836047 [info ]: Cached model count updated: 0 models (estimate)
+14:14:34.851438 [info ]: Cached model count updated: 0 models (accurate)
+14:14:34.927124 [info ]: Cached model count updated: 0 models (accurate)
+14:14:35.100496 [info ]: Cached model count updated: 0 models (estimate)
+14:14:35.220670 [info ]: Cached model count updated: 0 models (estimate)
+14:14:35.235629 [info ]: Cached model count updated: 0 models (accurate)
+14:14:35.314693 [info ]: Cached model count updated: 0 models (accurate)
+14:14:35.545154 [info ]: Cached model count updated: 0 models (estimate)
+14:14:35.545411 [info ]: Cached model count updated: 0 models (accurate)
