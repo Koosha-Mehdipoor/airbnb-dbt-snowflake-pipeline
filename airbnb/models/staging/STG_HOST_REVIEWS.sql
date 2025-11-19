@@ -1,0 +1,27 @@
+{{
+    config(
+        materialized = 'table'
+    )
+    
+    }}
+
+
+WITH H AS (
+    SELECT * FROM {{ref('V_T_HOSTS')}}
+),
+R AS (
+    SELECT * FROM {{ref('V_T_REVIEWS')}}
+)
+SELECT 
+    R.LISTING_ID,
+    H.HOST_ID,
+    H.HOST_NAME,
+    H.IS_SUPERHOST,
+    R.REVIEW_DATE,
+    R.REVIEW_TEXT,
+    R.REVIEW_SENTIMENT
+    MAX(H.CREATED_DATE, R.CREATED_DATE) AS RECORD_CREATED_DATE,
+    MAX(H.UPDATED_DATE, R.UPDATED_DATE) AS RECORD_UPDATED_DATE
+FROM H 
+LEFT JOIN R 
+ON H.HOST_ID = R.HOST_ID
