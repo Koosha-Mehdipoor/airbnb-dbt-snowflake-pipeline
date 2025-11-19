@@ -1,3 +1,10 @@
+{{
+  config(
+    materialized = 'ephemeral',
+  )
+}}
+
+
 WITH T_HOST AS(
     SELECT *
     FROM {{ref ('T_HOSTS')}}

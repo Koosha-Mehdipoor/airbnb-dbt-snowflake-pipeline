@@ -1,3 +1,10 @@
+{{
+  config(
+    materialized = 'ephemeral',
+  )
+}}
+
+
 WITH T_LISTING AS (
 SELECT *
 FROM {{ref ('T_LISTING')}}

@@ -1,3 +1,10 @@
+{{
+  config(
+    materialized = 'ephemeral',
+  )
+}}
+
+
 WITH STG_REVIEW AS (
 
 SELECT * FROM {{ref('T_REVIEWS')}}
