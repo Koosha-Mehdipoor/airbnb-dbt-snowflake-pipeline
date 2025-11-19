@@ -12,3 +12,5 @@ SELECT
     --removing null values from the sentiment column
     COALESCE(REVIEW_SENTIMENT,'NA') AS REVIEW_SENTIMENT
 FROM STG_REVIEW
+WHERE REVIEW_TEXT IS NOT NULL
+  AND REVIEW_TEXT <> ''
