@@ -52,3 +52,14 @@
 14:14:35.314693 [info ]: Cached model count updated: 0 models (accurate)
 14:14:35.545154 [info ]: Cached model count updated: 0 models (estimate)
 14:14:35.545411 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2025-11-19 14:02:07.221754 | cca6a52c-f0e2-4fef-8763-85966bdd9d5a ====================
+14:02:07.221787 [info ]: Starting dbt LSP server
+14:02:07.221796 [info ]: Connecting to LSP client on port 8000
+14:02:07.221963 [info ]: Successfully connected to LSP client
+14:02:07.221972 [info ]: Creating LSP service...
+14:02:07.256188 [info ]: Creating LSP server...
+14:02:07.256203 [info ]: Starting LSP server...
+14:02:07.400277 [info ]: Cached model count updated: 0 models (estimate)
+14:02:07.417500 [info ]: Cached model count updated: 0 models (accurate)
+14:02:07.499316 [info ]: Cached model count updated: 0 models (accurate)
+14:26:12.479451 [info ]: Cached model count updated: 0 models (estimate)
