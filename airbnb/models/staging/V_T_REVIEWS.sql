@@ -7,6 +7,7 @@ SELECT * FROM {{ref('T_REVIEWS')}}
 
 SELECT 
     LISTING_ID,
+    REVIEWER_NAME,
     REVIEW_DATE,
     REVIEW_TEXT,
     --removing null values from the sentiment column
