@@ -512,3 +512,100 @@ New version available 2.0.0-preview.68 (run `dbt system update`)
 14:06:38.935448 [info ]: 
 ==================== Execution Summary =====================
 Finished 'run' successfully for target 'dev' [698ms]
+[0m11:11:04.101648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105079f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106507080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106506de0>]}
+
+
+============================== 11:11:04.103756 | b7433acc-dec6-436c-b4e1-d30460f763a6 ==============================
+[0m11:11:04.103756 [info ] [MainThread]: Running with dbt=1.8.0
+[0m11:11:04.104139 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/koosha.mehdipoor@igenius.ai/Documents/airbnb-dbt-snowflake-pipeline /logs', 'fail_fast': 'False', 'profiles_dir': '/Users/koosha.mehdipoor@igenius.ai/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt ', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:11:04.141682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b7433acc-dec6-436c-b4e1-d30460f763a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e0ca70>]}
+[0m11:11:04.148245 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:11:04.148677 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:11:04.155591 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.07866483, "process_user_time": 0.501917, "process_kernel_time": 0.071464, "process_mem_max_rss": "103202816", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:11:04.155853 [debug] [MainThread]: Command `cli deps` succeeded at 11:11:04.155808 after 0.08 seconds
+[0m11:11:04.155994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064be630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106507080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e0ca70>]}
+[0m11:11:04.156119 [debug] [MainThread]: Flushing usage events
+[0m11:22:21.436905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e62d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106307110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106306e70>]}
+
+
+============================== 11:22:21.439147 | b480421e-e312-42a6-a0a8-4d1f6dc59efd ==============================
+[0m11:22:21.439147 [info ] [MainThread]: Running with dbt=1.8.0
+[0m11:22:21.439450 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/koosha.mehdipoor@igenius.ai/Documents/airbnb-dbt-snowflake-pipeline /logs', 'debug': 'False', 'profiles_dir': '/Users/koosha.mehdipoor@igenius.ai/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:22:21.489912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b480421e-e312-42a6-a0a8-4d1f6dc59efd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e4f80>]}
+[0m11:22:21.497023 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:22:21.497595 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:22:21.501351 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.089517206, "process_user_time": 0.506796, "process_kernel_time": 0.072173, "process_mem_max_rss": "102678528", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:22:21.501637 [debug] [MainThread]: Command `cli deps` succeeded at 11:22:21.501588 after 0.09 seconds
+[0m11:22:21.501840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106198c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106307110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ffbf20>]}
+[0m11:22:21.502054 [debug] [MainThread]: Flushing usage events
+[0m11:45:26.376761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110719550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11560b1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11560af60>]}
+
+
+============================== 11:45:26.378931 | 06ba9321-f43d-4af4-820c-5ba986813db8 ==============================
+[0m11:45:26.378931 [info ] [MainThread]: Running with dbt=1.8.0
+[0m11:45:26.379201 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/koosha.mehdipoor@igenius.ai/.dbt', 'log_path': '/Users/koosha.mehdipoor@igenius.ai/Documents/airbnb-dbt-snowflake-pipeline /logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:45:26.420924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '06ba9321-f43d-4af4-820c-5ba986813db8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11560b200>]}
+[0m11:45:26.440985 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:45:26.441470 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:45:26.445686 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.09497142, "process_user_time": 0.521627, "process_kernel_time": 0.084471, "process_mem_max_rss": "103989248", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:45:26.445974 [debug] [MainThread]: Command `cli deps` succeeded at 11:45:26.445922 after 0.10 seconds
+[0m11:45:26.446134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d1a780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1155db470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115091b20>]}
+[0m11:45:26.446287 [debug] [MainThread]: Flushing usage events
+[0m15:22:36.885617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102b48410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105907140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105906e70>]}
+
+
+============================== 15:22:36.888316 | a5ffb4dc-2da2-4916-b85e-fcdde6f56fd6 ==============================
+[0m15:22:36.888316 [info ] [MainThread]: Running with dbt=1.8.0
+[0m15:22:36.888569 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/koosha.mehdipoor@igenius.ai/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/koosha.mehdipoor@igenius.ai/Documents/airbnb-dbt-snowflake-pipeline /logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt ', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:22:36.921628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a5ffb4dc-2da2-4916-b85e-fcdde6f56fd6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037698e0>]}
+[0m15:22:36.927062 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:22:36.927688 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:22:36.929608 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.06834192, "process_user_time": 0.453888, "process_kernel_time": 0.067031, "process_mem_max_rss": "102236160", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:22:36.929855 [debug] [MainThread]: Command `cli deps` succeeded at 15:22:36.929809 after 0.07 seconds
+[0m15:22:36.929999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105296b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059b9be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a02a80>]}
+[0m15:22:36.930119 [debug] [MainThread]: Flushing usage events
+==================== 2025-12-09 14:34:20.602676 | 019b0388-e031-74d3-bb7a-6699ce76a04e ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.67
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "jyvgupe-qa12706",
+  "user": "dbt",
+  "database": "AIRBNB",
+  "warehouse": "COMPUTE_WH",
+  "schema": "DEV",
+  "role": "TRANSFORM"
+14:34:23.197992 [debug]: Query executed on node unknown:
+select 1 as id
+ Debugging connection test: OK
+  Debugged All checks passed!
+New version available 2.0.0-preview.72 (run `dbt system update`)
+14:34:24.052518 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [3.4s]
+==================== 2025-12-09 15:24:56.643203 | 019b03b7-33b9-7571-946e-e5c8b9660cf4 ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+New version available 2.0.0-preview.72 (run `dbt system update`)
+15:24:57.387979 [info ]: 
+==================== Execution Summary =====================
+Finished 'snapshot' successfully for target 'dev' [744ms]
+==================== 2025-12-09 15:30:08.634835 | 019b03bb-f670-7a20-ae14-5ad31c0d4518 ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+New version available 2.0.0-preview.72 (run `dbt system update`)
+15:30:09.385354 [info ]: 
+==================== Execution Summary =====================
+Finished 'snapshot' successfully for target 'dev' [750ms]
+==================== 2025-12-09 15:34:30.331335 | 019b03bf-f4b0-77c1-80a4-0f506f742d24 ====================
+dbt-fusion 2.0.0-preview.67
+   Loading ~/.dbt/profiles.yml
+New version available 2.0.0-preview.72 (run `dbt system update`)
+15:34:31.115562 [info ]: 
+==================== Execution Summary =====================
+Finished 'snapshot' successfully for target 'dev' [784ms]
