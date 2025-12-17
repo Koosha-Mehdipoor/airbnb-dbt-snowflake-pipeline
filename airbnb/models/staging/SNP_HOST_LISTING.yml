@@ -5,4 +5,10 @@ snapshots:
      unique_key: id
      strategy: timestamp
      updated_at: updated_at
+<<<<<<< HEAD
      hard_delete: invalidate
+=======
+     persist_docs:
+       relation: true
+       columns: true
+>>>>>>> a128fa2 (snapshot configurations)
