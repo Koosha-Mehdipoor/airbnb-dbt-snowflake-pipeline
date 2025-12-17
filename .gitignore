@@ -1,13 +1,49 @@
-/.DS_Store
-/.git_old
-/rsa_key.p8
-/rsa_key.pub
+# ------------------------
+# Python virtual environments
+# ------------------------
+.venv/
 venv/
+env/
+
+# ------------------------
+# Python cache and compiled files
+# ------------------------
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# ------------------------
+# dbt artifacts
+# ------------------------
+target/
+dbt_modules/
+
+# ------------------------
+# dbt logs
+# ------------------------
+logs/
+*.log
+
+# ------------------------
+# macOS system files
+# ------------------------
 .DS_Store
-*.p8
-*.pem
-*.key
-*.env
+.AppleDouble
+.LSOverride
+
+# ------------------------
+# VS Code settings
+# ------------------------
+.vscode/
+
+# ------------------------
+# Temporary files
+# -
+
+
 dbt_internal_packages/
+*.p8
+*.pub
+*.log
+*.logs
+dbt_packages/
