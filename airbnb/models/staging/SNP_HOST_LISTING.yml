@@ -6,4 +6,5 @@ snapshots:
      strategy: timestamp
      updated_at: updated_at
      hard_delete: invalidate
+     
 
