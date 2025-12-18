@@ -4,9 +4,11 @@ WITH RAW_REVIEWS AS (
 )
 
 SELECT 
-    listing_id,
-    DATE AS review_date,
+    LISTING_ID,
+    DATE AS REVIEW_DATE,
     REVIEWER_NAME AS REVIEWER_NAME,
-    comments AS review_text,
-    sentiment AS review_sentiment
+    comments AS REVIEW_TEXT,
+    COALESCE(sentiment,'NA') AS REVIEW_SENTIMENT
 FROM RAW_REVIEWS
+WHERE REVIEW_TEXT IS NOT NULL
+  AND REVIEW_TEXT <> ''

@@ -7,10 +7,10 @@
 
 
 WITH H AS (
-    SELECT * FROM {{ref('V_T_HOSTS')}}
+    SELECT * FROM {{ref('T_HOSTS')}}
 ),
 L AS (
-    SELECT * FROM {{ref('V_T_LISTING')}}
+    SELECT * FROM {{ref('T_LISTING')}}
 )
 SELECT 
     L.LISTING_ID,

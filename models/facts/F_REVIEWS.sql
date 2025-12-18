@@ -9,7 +9,7 @@
 }}
 
 WITH R AS (
-    SELECT * FROM {{ref('V_T_REVIEWS')}}
+    SELECT * FROM {{ref('T_REVIEWS')}}
 )
 SELECT 
     LISTING_ID,

@@ -7,7 +7,7 @@
 
 
 WITH reviews AS (
-    SELECT * FROM {{ref('STG_REVIEWS')}}
+    SELECT * FROM {{ref('F_REVIEWS')}}
 ),
 full_moon_dates AS (
     SELECT *
