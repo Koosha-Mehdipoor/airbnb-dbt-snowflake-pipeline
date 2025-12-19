@@ -39,3 +39,4 @@ models:
 # keeps track of test failures in a separate table
 data_tests:
   +store_failures: true
+  +schema : _test_failures
