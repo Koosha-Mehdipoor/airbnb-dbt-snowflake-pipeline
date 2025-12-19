@@ -35,3 +35,7 @@ models:
         +materialized: table
       staging:
         +materialized: view
+
+# keeps track of test failures in a separate table
+data_tests:
+  +store_failures: true
