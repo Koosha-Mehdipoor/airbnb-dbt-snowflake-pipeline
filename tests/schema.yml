@@ -26,6 +26,22 @@ models:
           - accepted_values:
                 arguments:
                   values: ['Shared room', 'Private room', 'Hotel room', 'Entire home/apt']
+      - name: PRICE
+        data_type: float
+        description: "The price per night for the listing."
+        data_tests:
+          - not_null
+
+      - name: CREATED_AT
+        data_type: timestamp
+        description: "The timestamp when the listing was created."
+        data_tests:
+          - not_null
+      - name: UPDATED_AT
+        data_type: timestamp
+        description: "The timestamp when the listing was last updated."
+        data_tests:
+          - not_null
 
   - name: DIM_HOSTS
     config:
@@ -42,6 +58,23 @@ models:
       - name: HOST_NAME
         data_type: string
         description: "The name of the host."
+        data_tests:
+          - not_null
+      - name: IS_SUPERHOST
+        data_type: string
+        description: "Indicates whether the host is a superhost."
+        data_tests:
+          - accepted_values:
+                arguments:
+                  values: [t, f, NA]
+      - name: CREATED_AT
+        data_type: timestamp
+        description: "The timestamp when the host profile was created."
+        data_tests:
+          - not_null
+      - name: UPDATED_AT
+        data_type: timestamp
+        description: "The timestamp when the host profile was last updated."
         data_tests:
           - not_null
 
