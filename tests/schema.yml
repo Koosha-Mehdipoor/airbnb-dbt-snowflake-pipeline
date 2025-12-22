@@ -11,6 +11,27 @@ models:
         data_tests:
           - unique
           - not_null
+      - name: LISTING_URL
+        data_type: string
+        description: "The URL of the listing."
+
+      - name: LISTING_NAME
+        data_type: string
+        description: "The name/title of the listing."
+
+      - name: ROOM_TYPE
+        data_type: string
+        data_tests:
+          - accepted_values:
+                arguments:
+                  values: ['Shared room', 'Private room', 'Hotel room', 'Entire home/apt']
+
+      - name: MINIMUM_NIGHTS
+        data_type: integer
+        description: "The minimum number of nights required to book the listing."
+        data_tests:
+          - positive_values
+
       - name: HOST_ID
         data_type: integer
         description: "The unique identifier for the host of the listing."
@@ -21,11 +42,6 @@ models:
                 to: ref('DIM_HOSTS')
                 field: HOST_ID
 
-      - name: ROOM_TYPE
-        data_tests:
-          - accepted_values:
-                arguments:
-                  values: ['Shared room', 'Private room', 'Hotel room', 'Entire home/apt']
       - name: PRICE
         data_type: float
         description: "The price per night for the listing."
@@ -35,17 +51,12 @@ models:
               config:
                 severity: warn
 
-      - name: MINIMUM_NIGHTS
-        data_type: integer
-        description: "The minimum number of nights required to book the listing."
-        data_tests:
-          - positive_values
-
       - name: CREATED_AT
         data_type: timestamp
         description: "The timestamp when the listing was created."
         data_tests:
           - not_null
+          
       - name: UPDATED_AT
         data_type: timestamp
         description: "The timestamp when the listing was last updated."
