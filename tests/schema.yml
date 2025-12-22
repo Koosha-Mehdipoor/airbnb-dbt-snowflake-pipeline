@@ -31,6 +31,9 @@ models:
         description: "The price per night for the listing."
         data_tests:
           - not_null
+          - positive_values:
+              config:
+                severity: warn
 
       - name: MINIMUM_NIGHTS
         data_type: integer
