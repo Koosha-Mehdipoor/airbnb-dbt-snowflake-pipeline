@@ -33,7 +33,7 @@ models:
   airbnb:
       source:
         +materialized: table
-      staging:
+      dim:
         +materialized: view
 
 # keeps track of test failures in a separate table
