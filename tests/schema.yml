@@ -32,6 +32,12 @@ models:
         data_tests:
           - not_null
 
+      - name: MINIMUM_NIGHTS
+        data_type: integer
+        description: "The minimum number of nights required to book the listing."
+        data_tests:
+          - positive_values
+
       - name: CREATED_AT
         data_type: timestamp
         description: "The timestamp when the listing was created."
