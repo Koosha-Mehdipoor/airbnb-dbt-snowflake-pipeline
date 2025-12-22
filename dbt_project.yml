@@ -37,6 +37,9 @@ on-run-start:
 
 models:
   airbnb:
+     # adding permissions to to the dbt user and also reporter which will be our BI user
+      +grants:
+        select: ["transform", "reporter"]
       +post-hook:
         - "INSERT INTO {{target.schema}}.audit_log VALUES ('{{this}}', CURRENT_TIMESTAMP, 'SUCCESS')"
       +materialized: view
