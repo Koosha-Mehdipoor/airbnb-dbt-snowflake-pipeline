@@ -1,13 +1,18 @@
 models:
   - name: DIM_LISTINGS
+    config:
+      contract:
+        enforced: true
     description: "A dimension table containing listing details."
     columns:
       - name: LISTING_ID
+        data_type: integer
         description: "The unique identifier for each listing."
         data_tests:
           - unique
           - not_null
       - name: HOST_ID
+        data_type: integer
         description: "The unique identifier for the host of the listing."
         data_tests:
           - not_null
@@ -21,5 +26,23 @@ models:
           - accepted_values:
                 arguments:
                   values: ['Shared room', 'Private room', 'Hotel room', 'Entire home/apt']
+
+  - name: DIM_HOSTS
+    config:
+      contract:
+        enforced: true
+    description: "A dimension table containing host details."
+    columns:
+      - name: HOST_ID
+        data_type: integer
+        description: "The unique identifier for each host."
+        data_tests:
+          - unique
+          - not_null
+      - name: HOST_NAME
+        data_type: string
+        description: "The name of the host."
+        data_tests:
+          - not_null
 
 
