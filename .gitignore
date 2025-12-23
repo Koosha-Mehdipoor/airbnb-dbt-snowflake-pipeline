@@ -47,3 +47,4 @@ dbt_internal_packages/
 *.log
 *.logs
 dbt_packages/
+snowflake_preset_URL.py
