@@ -37,6 +37,7 @@ on-run-start:
 
 models:
   airbnb:
+      +static_analysis: unsafe
      # adding permissions to to the dbt user and also reporter which will be our BI user
       +grants:
         select: ["transform", "reporter"]
