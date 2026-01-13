@@ -1,0 +1,111 @@
+models:
+  - name: DIM_LISTINGS
+    config:
+      contract:
+        enforced: true
+    description: "A dimension table containing listing details."
+    columns:
+      - name: LISTING_ID
+        data_type: integer
+        description: "The unique identifier for each listing."
+        data_tests:
+          - unique
+          - not_null
+      - name: LISTING_URL
+        data_type: string
+        description: "The URL of the listing."
+
+      - name: LISTING_NAME
+        data_type: string
+        description: "The name/title of the listing."
+
+      - name: ROOM_TYPE
+        data_type: string
+        data_tests:
+          - accepted_values:
+                arguments:
+                  values: ['Shared room', 'Private room', 'Hotel room', 'Entire home/apt']
+
+      - name: MINIMUM_NIGHTS
+        data_type: integer
+        description: "The minimum number of nights required to book the listing."
+        data_tests:
+          - positive_values
+
+      - name: HOST_ID
+        data_type: integer
+        description: "The unique identifier for the host of the listing."
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('DIM_HOSTS')
+                field: HOST_ID
+
+      - name: PRICE
+        data_type: float
+        description: "The price per night for the listing."
+        data_tests:
+          - not_null
+          - positive_values:
+              config:
+                severity: warn
+
+      - name: CREATED_AT
+        data_type: timestamp
+        description: "The timestamp when the listing was created."
+        data_tests:
+          - not_null
+          
+      - name: UPDATED_AT
+        data_type: timestamp
+        description: "The timestamp when the listing was last updated."
+        data_tests:
+          - not_null
+
+  - name: DIM_HOSTS
+    config:
+      contract:
+        enforced: true
+    description: "A dimension table containing host details."
+    columns:
+      - name: HOST_ID
+        data_type: integer
+        description: "The unique identifier for each host."
+        data_tests:
+          - unique
+          - not_null
+      - name: HOST_NAME
+        data_type: string
+        description: "The name of the host."
+        data_tests:
+          - not_null
+      - name: IS_SUPERHOST
+        data_type: string
+        description: "Indicates whether the host is a superhost."
+        data_tests:
+          - accepted_values:
+                arguments:
+                  values: [t, f, NA]
+      - name: CREATED_AT
+        data_type: timestamp
+        description: "The timestamp when the host profile was created."
+        data_tests:
+          - not_null
+      - name: UPDATED_AT
+        data_type: timestamp
+        description: "The timestamp when the host profile was last updated."
+        data_tests:
+          - not_null
+  - name: DIM_HOST_LISTING
+    config:
+    tests:
+      - dbt_expectations.expect_table_row_count_to_equal_other_table:
+          arguments:
+            compare_model: source('airbnb','listings')
+
+
+
+
+
+
