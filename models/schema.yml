@@ -104,14 +104,22 @@ models:
           arguments:
             compare_model: source('airbnb','listings')
 
+            
+
     columns:
       - name: PRICE
         tests:
               - dbt_expectations.expect_column_quantile_values_to_be_between:
                   arguments:
-                    quantiles: .99
+                    quantile: .99
                     min_value: 50
                     max_value: 500
+              - dbt_expectations.expect_column_max_to_be_between:
+                   arguments:
+                      min_value: 500
+                      max_value: 4000
+                      config:
+                        severity: warn
 
 
 
