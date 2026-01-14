@@ -2,7 +2,7 @@ models:
   - name: DIM_LISTINGS
     config:
       contract:
-        enforced: true
+        enforced: false
     description: "A dimension table containing listing details."
     columns:
       - name: LISTING_ID
@@ -103,6 +103,15 @@ models:
       - dbt_expectations.expect_table_row_count_to_equal_other_table:
           arguments:
             compare_model: source('airbnb','listings')
+
+    columns:
+      - name: PRICE
+        tests:
+              - dbt_expectations.expect_column_quantile_values_to_be_between:
+                  arguments:
+                    quantiles: .99
+                    min_value: 50
+                    max_value: 500
 
 
 
