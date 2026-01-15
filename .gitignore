@@ -48,3 +48,33 @@ dbt_internal_packages/
 *.logs
 dbt_packages/
 snowflake_preset_URL.py
+profiles.yml
+
+-------------------------
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# dbt
+target/
+logs/
+dbt_packages/
+dbt_internal_packages/
+manifest.json
+run_results.json
+
+# dbt profiles (secrets)
+profiles.yml
+
+# Dagster local state
+dagster_home/
+.tmp_dagster_home_*/
+**/tmp_dagster_home_*/
+*.db
+
+# OS / editor
+.DS_Store
+.vscode/
+.user.yml
