@@ -98,7 +98,6 @@ models:
         data_tests:
           - not_null
   - name: DIM_HOST_LISTING
-    config:
     tests:
       - dbt_expectations.expect_table_row_count_to_equal_other_table:
           arguments:
@@ -109,6 +108,9 @@ models:
     columns:
       - name: PRICE
         tests:
+              - dbt_expectations.expect_column_values_to_be_of_type:
+                  arguments:
+                    column_type: float
               - dbt_expectations.expect_column_quantile_values_to_be_between:
                   arguments:
                     quantile: .99
