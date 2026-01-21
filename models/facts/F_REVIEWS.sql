@@ -12,7 +12,7 @@ WITH R AS (
     SELECT * FROM {{ref('T_REVIEWS')}}
 )
 SELECT 
-   {{ dbt_utils.generate_surrogate_key(['listing_id', 'review_date']) }} as review_id,
+   {{ dbt_utils.generate_surrogate_key(['listing_id', 'review_date', 'REVIEWER_NAME']) }} as review_id,
     LISTING_ID,
     REVIEWER_NAME,
     REVIEW_DATE,
