@@ -4,10 +4,9 @@ exposures:
   - name: executive_dashboard
     label: Executive Dashboard
     type: dashboard
-    url: https://db57cae0.us1a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=dGSve2T6JKU70q3w0LVrKdGYu-qR__g_KT0vqTSjHjQe1IgIxStRdj2Ym3lb6e1z
+    url: https://5fb50298.us2a.app.preset.io/superset/dashboard/8/?native_filters_key=wB82gNEBMay7G9R9p37pGbU-WFgJzc3ipCbmV9TwzSdRtn_jvhtEU_DnUEoMRBHF
     depends_on:
-      - ref('F_REVIEWS')
-      - ref('seed_full_moon_dates')
+      - ref('VIS_AIRBNB_KPIS')
 
     owner: 
       name: Koosha Mehdipoor
