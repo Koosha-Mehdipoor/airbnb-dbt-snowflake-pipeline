@@ -5,6 +5,7 @@ F.REVIEW_DATE,
 F.REVIEW_SENTIMENT,
 CASE WHEN F.REVIEW_SENTIMENT = 'positive' THEN 1
      ELSE 0 END AS POSETIVE_SENTIMENT,
+d.HOST_ID,     
 d.host_name, 
 d.is_superhost,
 d.listing_name, 
