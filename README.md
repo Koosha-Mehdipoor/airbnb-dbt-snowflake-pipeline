@@ -139,10 +139,10 @@ The dbt native documentation and linage is also available through commands 'dbt 
 
 ## How to run the project
 
-dbt debug: for debuging your dbt connection to your database.
-dbt clean: in case of mis match between the dbt packages you are using, cleans all the existing packages.
-dbt deps: for creating the neccessary packages for running the dbt project like utils.
-dbt run: to run all the existing models
-dbt test: to run the test to check out if there any failures or warnings on tests created.
+- dbt debug: for debuging your dbt connection to your database.
+- dbt clean: in case of mis match between the dbt packages you are using, cleans all the existing packages.
+- dbt deps: for creating the neccessary packages for running the dbt project like utils.
+- dbt run: to run all the existing models
+- dbt test: to run the test to check out if there any failures or warnings on tests created.
 
 
